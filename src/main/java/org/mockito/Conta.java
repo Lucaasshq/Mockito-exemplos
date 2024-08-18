@@ -20,7 +20,7 @@ public class Conta {
     }
 
     public void debita(int valorAPagar) {
-        this.saldo = this.saldo - valorAPagar;
+        this.saldo -= valorAPagar;
     }
 
     public void enviaCreditoParaEmissor(int valorAPagar) {

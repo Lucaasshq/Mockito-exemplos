@@ -23,7 +23,7 @@ public class CadastrarPessoaTest {
     void validaCadastrarPessoa() {
        DadosLocalizacao dadosFakes = new DadosLocalizacao("RN", "Natal", "Rua2", "casa", "Centro");
 
-       Mockito.when(apiDosCorreios.buscaDadosComBaseNoCep("65535000")).thenReturn(dadosFakes);
+       Mockito.when(apiDosCorreios.buscaDadosComBaseNoCep(ArgumentMatchers.anyString())).thenReturn(dadosFakes);
 
         Pessoa pessoa = cadastrarPessoa.cadastrarPessoa("Lucas", "8524545", LocalDate.now(), "65535000");
 
