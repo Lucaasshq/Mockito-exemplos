@@ -31,8 +31,8 @@ public class Pessoa {
         return documento;
     }
 
-    public LocalDate getNascimento() {
-        return nascimento;
+    public LocalDate getNasimento() {
+        return nascimento;c
     }
 
     public DadosLocalizacao getEndereco() {
